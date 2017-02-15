@@ -1,0 +1,34 @@
+{  
+   "HillStationName":[  
+      {  
+         "StationName":"Chail",
+         "Description":"A Beautiful Place to visit",
+         "Image":"https://upload.wikimedia.org/wikipedia/commons/5/5e/Chailhill.jpg"
+      },
+      {  
+         "StationName":"Shimla",
+         "Description":"Like heaven on earth",
+         "Image":"https://upload.wikimedia.org/wikipedia/commons/5/5e/Ridge%2C_Shimla.JPG"
+      },
+      {  
+         "StationName":"Solan",
+         "Description":"City of Red Gold",
+         "Image":"https://upload.wikimedia.org/wikipedia/commons/4/41/Snowfall_solan_city.jpg"
+      },
+      {  
+         "StationName":"Nahan",
+         "Description":"A Peacefull and Beautifull Hill Statiton",
+         "Image":"https://upload.wikimedia.org/wikipedia/commons/0/08/Renuka_Lake%2C_Himachal_Pradesh.JPG"
+      },
+      {  
+         "StationName":"Munnar",
+         "Description":"The name Munnar is believed to mean three rivers",
+         "Image":"https://upload.wikimedia.org/wikipedia/commons/d/d5/Hills_around_the_tea_plantations%2C_Munnar.JPG"
+      },
+      {  
+         "StationName":"Kasauli",
+         "Description":"A Beautiful Place to visit",
+         "Image":"https://upload.wikimedia.org/wikipedia/commons/d/d4/Gulbert_trail_Kasauli.jpg"
+      }
+   ]
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vgw-dV-Xfa">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hillstation-->
+        <scene sceneID="weQ-48-nTB">
+            <objects>
+                <tableViewController title="Hillstation" id="bCz-xh-QWf" customClass="MyTableViewController" customModule="HillStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="94" sectionHeaderHeight="18" sectionFooterHeight="18" id="Ap6-st-gd2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="separatorColor" red="0.77900641029999995" green="0.77900641029999995" blue="0.77900641029999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="94" id="sSG-zy-FoR">
+                                <rect key="frame" x="0.0" y="120" width="375" height="94"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sSG-zy-FoR" id="ZnH-jH-DnS">
+                                    <frame key="frameInset" width="375" height="94"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <rect key="contentStretch" x="0.14999999999999999" y="0.25" width="1" height="1"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bCz-xh-QWf" id="iIm-GM-7oh"/>
+                            <outlet property="delegate" destination="bCz-xh-QWf" id="zOv-Lm-GZJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="HillStations" id="Mac-gG-Ide"/>
+                    <connections>
+                        <segue destination="VxY-pU-jYi" kind="show" identifier="DetailView" id="Xt8-76-95m"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1o-H9-7dx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="-178.56071964017991"/>
+        </scene>
+        <!--My Class View Controller-->
+        <scene sceneID="qCz-nL-VSy">
+            <objects>
+                <viewController id="VxY-pU-jYi" customClass="MyClassViewController" customModule="HillStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HrT-9P-6n2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Myx-0V-cxU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UdU-qR-3Rq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PhM-cd-NJV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="jmp-1i-0PL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOg-JK-uh9">
+                                <frame key="frameInset" minX="44" minY="426" width="304" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PhM-cd-NJV" firstAttribute="top" secondItem="HrT-9P-6n2" secondAttribute="bottom" constant="57" id="770-La-RDv"/>
+                            <constraint firstAttribute="trailing" secondItem="PhM-cd-NJV" secondAttribute="trailing" id="FIS-dx-heu"/>
+                            <constraint firstItem="PhM-cd-NJV" firstAttribute="leading" secondItem="UdU-qR-3Rq" secondAttribute="leading" id="hIh-IX-2lB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myDescr" destination="jOg-JK-uh9" id="BaZ-mf-7na"/>
+                        <outlet property="myImage" destination="PhM-cd-NJV" id="Bpf-5j-Cg5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLg-mm-mRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2016.8" y="-179.46026986506749"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f43-3U-Qs5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vgw-dV-Xfa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0uB-gF-ZFi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bCz-xh-QWf" kind="relationship" relationship="rootViewController" id="Toq-nK-qpF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5LI-rD-ew0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.8" y="-178.56071964017991"/>
+        </scene>
+    </scenes>
+</document>
